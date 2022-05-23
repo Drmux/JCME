@@ -1,0 +1,84 @@
+
+
+body {
+    padding: 0;
+    background-color:#111;
+    color: #EEE;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 24pt;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding: 0px;
+    padding-left: 0.2em;
+}
+h2 {
+    font-size:14pt;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding: 0px;
+    padding-left: 0.2em;
+}
+h3 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding: 0px;
+    padding-left: 0.2em;
+}
+.pagehead{
+    background-color:#233;
+}
+.pagefoot {
+    color:#AAA;
+    background-color:#203020;
+}
+.hidden{
+    visibility:hidden;
+}
+.visible{
+    visibility:visible;
+}
+.content {
+    background-color:#222;
+}
+.dialog-transparency {
+    background:rgba(64,64,64,0.7);
+}
+.dialog {
+    opacity: 1.0;
+    background-color: #333;
+    background: rgba(32,32,32,1.0);
+}
+.dialoghead{
+    background:rgba(48,64,64,1.0);
+}
+.border0{
+    border:0;
+}
+.border1 {
+    border: solid 1px #000;
+}
+.border1-bottom{
+    border-bottom: solid 1px #000;
+}
+.border2{
+    border:solid #FFF ipx;;
+}
+textarea {
+    color:#BCB;
+    background-color:#111;
+}
+input {
+    color:#BBC;
+    background-color: #383838;
+}
+span {
+
+}
+a {
+
+}
+p {
+
+}

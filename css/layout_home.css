@@ -1,0 +1,200 @@
+div {
+
+}
+span {
+    width:100%;
+    margin-left:.5em;
+    margin-right:.5em;
+
+}
+p {
+    margin-left:1em;
+    margin-right:1em;
+    text-indent:2em;
+}
+.spacer{
+    float:left;
+    width:100%;
+    height:.25em;
+}
+.spacer2 {
+    float: left;
+    width: 100%;
+    height: .5em;
+}
+.pad {
+    padding: .25em;
+}
+.padside {
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+.page{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:2px;
+    /*border: solid 1px gray;*/
+}
+.pagehead {
+    position: absolute;
+    left:0;
+    right:0;
+    padding-bottom: .25em;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+.pagenav {
+    float:left;
+    width: 100%;
+}
+
+.content {
+    position:absolute;
+    top:3.5em;
+    bottom:2em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:.25em;
+    padding-right:.25em;
+    overflow-y:scroll;
+}
+.pagefoot {
+    position:absolute;
+    bottom:0;
+    height:1.5em;
+    padding-top:.25em;
+    left:0;
+    width:100%;
+}
+.dialog-transparency{
+    z-index:50;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+.dialog {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 2em;
+}
+
+.dialoghead {
+    opacity:1;
+    float: left;
+    width:100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.dialogcontent {
+    float: left;
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+.dialogfoot {
+    float: left;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+
+ .frauto{
+    float:right;
+    width:auto;
+ }
+ .right{
+     position:absolute;
+     right:0;
+ }
+    
+ .fauto{
+     float:left;
+     width:auto;
+ }
+.flR2px {
+    float: left;
+    left: 0;
+    right: 4px;
+}
+ .f33{
+     float:left;
+     width:33px
+ }
+ .f100 {
+     float:left;
+     width:100%;
+ }
+div.col100{
+    width:100%;
+    padding:2em;
+}
+div.col50{
+    float:left;
+    width:50%;
+    padding:2em;
+}
+div.col33{
+    float: left;
+    width:33%;
+}
+div.pageContainer {
+
+}
+textarea{
+    width:99%;
+}
+textarea.dialog; {
+    width:9em;
+}
+
+
+.consoleinput{
+    width:100%;
+}
+
+.buttonlarge{
+    width:1.75em;
+    padding-top:.75em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+.buttonsmall {
+    width: 1em;
+    padding-top: .5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#newbutton{
+}
+  
+#savebutton {
+}
+
+canvas {
+    width: 400px;
+    height: 300px;
+}
+
+canvas.minimap32{
+    width:800px;
+    height:600px;
+}
+canvas.minimap64{
+
+}
+canvas.test_canvas{
+
+}
