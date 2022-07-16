@@ -198,3 +198,6 @@ canvas.minimap64{
 canvas.test_canvas{
 
 }
+#viewport {
+    float:left;
+}

@@ -1,7 +1,10 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
+//  BODY.JS
+//      -Dynamically writes HTML document
+//      -Starts the canvas renderer
+//      
 //
-//  Render Layout modules
-//
+///////////////////////////////////////////////////////////////////////////////////////////
 
 function toolBarH() {
     //render a list of icons and their names with functions to change the active tool.
@@ -10,17 +13,17 @@ function toolBarH() {
 function opendialog(id) { //change to openDialog;
     var div = document.getElementById(id);
     div.style.visibility = "visible";
-   // alert(div.style.visibility);
 }
 
 function closedialog(id) {//change to hideDialog
     var div = document.getElementById(id);
-    //document.getElementById("loadstrdialog").visibility = "hidden";
     div.style.visibility = "hidden";
-    //alert(div.style.visibility);
 }
 
-function dialogLoadString(title = "Load string", id = "loadstrdialog") {
+//
+// Pop-up dialogs: Load, save, message, newspaper..?
+////////////////////////////////////////////////////////////////////////////////////////////
+function dialogLoadString(title = "Load string", id = "loadstrdialog") { 
     var str = "";
     var s = [];
 
@@ -88,7 +91,6 @@ function renderPageHead(h1="") {
         str = (img("img/ui/new.png", "loadimg", "fauto buttonlarge", "", "frauto"));
         str = a("#", str, "loadlink", "", "onclick=\"" + onclick + "\"");
         s.push(div(str, "", "frauto"));
-
         onclick = "opendialog('savedialog')"
         str = (img("img/ui/save.png", "saveimg", "fauto buttonlarge", "", "frauto"));
         str = a("#", str, "savelink", "", "onclick=\"" + onclick + "\"");
@@ -112,25 +114,23 @@ function renderPageFoot() {
     return s.join("");
 }
 
-function renderContent(module="",context="") {
+//function renderContent(module="",context="") {
 
-}
+//}
 
 function pageEventsDebug() {
-    var canvas = document.getElementById("test_canvas");
-    canvas.addEventListener("load", test_canvas,false);
+    //var canvas = document.getElementById("test_canvas");
+    //canvas.addEventListener("load", test_canvas, false);
+    //alert('yalla trippin');
 }
 
-function pageEvents(page = { "empty": "true" }) {
-
-
-}
+//function pageEvents(page = { "empty": "true" }) {
+//}
 
 
 ////////////////////////////////////////////////////////////////////////////
 
 function renderPage(page = { "Empty": "True" }) {
-
     var str = "";
     var s = [];
     var title = "Hello!";
@@ -202,9 +202,11 @@ function pageRenderDebug(page = "", concmethod = "array", callback = null) {
             s.push(div("<hr>", "", "f100"));
 
             s.push(divO("", "flR2px border0"));
-            let dostring = 'alert("aaaaugh")';
-                dostring = 'onload=\"' + dostring + '\"';
-                s.push(canvas("test_canvas", "", "400", "300",dostring,""));
+            //let dostring = "alert('aaaaugh')";
+                //dostring = 'onload=\"' + dostring + '\"';
+                s.push(canvas(activeCanvas, "", "400", "300", "", ""));
+                //s.push(canvas("viewport", "", "400", "300", dostring, ""));
+                
             s.push(divC());
 
             s.push(div("<hr>", "", "f100"));
@@ -267,14 +269,9 @@ function pageRenderDebug(page = "", concmethod = "array", callback = null) {
 
             s.push(div("&nbsp;", "", "spacer2"));///
     
-
-
-
     //^^^^^^^^^^^^^^^^^^^^^^^
     ///////////////////////////
     
-    
-
     s.push(divC());//end Content
     s.push(divC());//End Page
     s.push(divC());//End Page
@@ -284,15 +281,23 @@ function pageRenderDebug(page = "", concmethod = "array", callback = null) {
     s.push(dialogLoadString("Load JSON"));
     s.push(dialogSave());
 
+
+
     return s.join("");    
 
 }
 
 
 
-function listen() {//body Onload
+function pageInit(canvas = activeCanvas) {//body Onload
+
+    //Get initial canvas variable from GET/POST/OTHER/?
+    //////////////////////////////////////////////
+
+    //check if active canvas is set?
+
+    runCanvas(canvas);
    // inpt = 
-    //alert("can you dig it");
 }
 
 
