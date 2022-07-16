@@ -1,7 +1,7 @@
 # JCME
  Javascript City Millenium Edition
 
-Javascipt City Millenium Edition
+Javascript City Millenium Edition
 
 Is a browser-based JS frontend to view and edit Sim City 2000 save files.
 
